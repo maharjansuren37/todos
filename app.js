@@ -5,9 +5,17 @@ const output = document.getElementById('output');
 const content = document.querySelector('.content');
 const heading = document.querySelector('.heading');
 
-// Event Listeners
-addBtn.addEventListener('click', addTask);
-output.addEventListener('click', deleteTask);
+// DOM Content load
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Loaded");
+});
+
+// load  Event Listeners
+function loadEventListeners() {
+    addBtn.addEventListener('click', addTask);
+    output.addEventListener('click', deleteTask);
+    output.addEventListener('click', updateTask);
+}
 
 function addTask(e) {
     let task = input.value;
@@ -17,7 +25,7 @@ function addTask(e) {
         li.appendChild(document.createTextNode(task));
         li.className = 'task';
         const edit = document.createElement('a');
-        edit.innerHTML = '<span>Delete</span>';
+        edit.innerHTML = '<div><span>Update</span><span>Delete</span></div>';
         edit.className = 'edit';
         li.appendChild(edit);
         output.appendChild(li);
@@ -28,8 +36,6 @@ function addTask(e) {
     } else {
         displayMessage("Please add a task!", 'alert');
     }
-
-    
 
     e.preventDefault();
 }
@@ -51,3 +57,15 @@ function deleteTask(e) {
         e.target.parentElement.parentElement.remove();
     }
 }
+
+function updateTask(e) {
+    if (e.target.innerText === 'Update') {
+        const task = e.target.parentElement.parentElement.parentElement.firstChild.textContent;
+        input.value = task;
+        addBtn.innerText = "Save";
+        const updatedTask = input.value;
+        console.log(updateTask);
+    }
+}
+
+loadEventListeners();
