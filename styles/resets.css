@@ -1,0 +1,80 @@
+/* Modern CSS Reset 29/11/2022 Josh Comeau*/
+/* use a more-intuitive box-sizing model.*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0; /*added by myself*/
+    font: inherit;
+}
+
+/* remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* allow percentage-based heights in the application */
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* typographic tweaks 1.accessible line-height 2.improve text rendering */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+h1 {
+    color: green;
+}
+
+.task {
+    background-color: antiquewhite;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    position: relative;
+}
+
+.message {
+    position: absolute;
+    z-index: 1;
+}
+
+.normal {
+    background-color: green;
+    color: white;
+}
+
+.alert {
+    background-color: red;
+    color: white;
+}
