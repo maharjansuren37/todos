@@ -5,25 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script src="./scripts/mouse.js"></script>
+    <script defer src="scripts/index.js"></script>
 </head>
 <body>
-    <div id="trail-container"></div>
-    <div>
+    <header>
+        <h1>Notes</h1>
+    </header>
+    <form>
+        <div class="form-controls">
+            <label for="task">Add your task: </label>
+            <input id="task" type="text" placeholder="Your task">
+        </div>
         <button>Add</button>
-    </div>
-    <div>
-        <header>
-            <h1>Notes</h1>
-        </header>
-        <div id="output"></div>
-    </div>
-    <div class="content">
-        <form id="form">
-            <input id="input" type="text" placeholder="Your task" />
-            <button class="btn add" type="submit">Add</button>    
-        </form>
-        
-    </div>
+    </form>
 </body>
 </html>

@@ -45,36 +45,3 @@ svg {
     display: block;
     max-width: 100%;
 }
-
-
-h1 {
-    color: green;
-}
-
-.task {
-    background-color: antiquewhite;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-}
-
-body {
-    position: relative;
-}
-
-.message {
-    position: absolute;
-    z-index: 1;
-}
-
-.normal {
-    background-color: green;
-    color: white;
-}
-
-.alert {
-    background-color: red;
-    color: white;
-}
