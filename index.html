@@ -8,15 +8,23 @@
     <script defer src="scripts/index.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Notes</h1>
-    </header>
-    <form>
-        <div class="form-controls">
-            <label for="task">Add your task: </label>
-            <input id="task" type="text" placeholder="Your task">
+    <div class="container">
+        <header>
+            <h1 class="heading">Notes</h1>
+        </header>
+        <div class="content">
+            <form id="task-form">
+                <div class="form-group">
+                    <div class="form-controls">
+                        <input id="task-input" type="text" placeholder="Your task">
+                    </div>
+                    <button class="btn add" type="submit">Add</button>
+                </div>
+            </form>
         </div>
-        <button>Add</button>
-    </form>
+        <section>
+            <ul class="output" id="output"></ul>
+        </section>    
+    </div>
 </body>
 </html>

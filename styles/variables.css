@@ -1,0 +1,5 @@
+:root {
+    --ff: "Proxima Nova", sans-serif;
+
+    --body: var(var(--ff));
+}

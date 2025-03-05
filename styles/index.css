@@ -1,1 +1,36 @@
-@import url("resets.css");
+@import "resets.css";
+@import "fonts.css";
+@import "variables.css";
+@import "typography.css";
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.form-controls {
+    display: inline-block;
+}
+
+.tasks {
+    background-color: aliceblue;
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* utilities */
+.container {
+    outline: 1px solid blue;
+
+    --max-width: 1110px;
+    --container-padding: 1rem;
+
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+}
