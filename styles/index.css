@@ -17,11 +17,27 @@ section {
 
 .tasks {
     background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
 }
 
 .output {
     display: flex;
     justify-content: space-between;
+}
+
+.delete {
+    cursor: pointer;;
+}
+
+.notification {
+    background-color: green;
+    color: #fff;
+}
+
+.alert {
+    background-color: red;
+    color: #fff;
 }
 
 /* utilities */
