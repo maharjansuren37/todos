@@ -1,0 +1,93 @@
+@import "resets.css";
+@import "fonts.css";
+@import "variables.css";
+@import "typography.css";
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.content {
+    width: 100%;
+
+    margin-bottom: 2rem;
+}
+
+.task-form {
+    width: 100%;
+
+    margin-top: 2rem;
+}
+
+.form-group {
+    width: 100%;
+
+    display: flex;
+}
+
+.form-controls {
+    max-width: 80%;
+    width: 80%;
+}
+
+.task-input {
+    width: 100%;
+}
+
+.btn {
+    width: 20%;
+
+    background-color: black;
+    color:#ffff;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color ease-in-out 300ms, color ease-in-out 300ms;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.tasks {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    cursor: pointer;;
+}
+
+.notification {
+    background-color: green;
+    color: #fff;
+}
+
+.alert {
+    background-color: red;
+    color: #fff;
+}
+
+/* utilities */
+.container {
+    --max-width: 1110px;
+    --container-padding: 1rem;
+
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+}

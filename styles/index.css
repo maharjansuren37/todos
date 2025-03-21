@@ -1,93 +1,50 @@
-@import "resets.css";
-@import "fonts.css";
-@import "variables.css";
-@import "typography.css";
-
-header {
-    text-align: center;
+/* RESETS */
+/* Modern CSS Reset 29/11/2022 Josh Comeau*/
+/* use a more-intuitive box-sizing model.*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-section {
-    text-align: center;
+/* remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0; /*added by myself*/
+    font: inherit;
 }
 
-table, th, td {
-    border: 1px solid black;
+/* remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
 }
 
-.content {
-    width: 100%;
-
-    margin-bottom: 2rem;
+/* set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
-.task-form {
-    width: 100%;
-
-    margin-top: 2rem;
+/* allow percentage-based heights in the application */
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
-.form-group {
-    width: 100%;
-
-    display: flex;
+/* typographic tweaks 1.accessible line-height 2.improve text rendering */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
-.form-controls {
-    max-width: 80%;
-    width: 80%;
+/* improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
 }
 
-.task-input {
-    width: 100%;
-}
-
-.btn {
-    width: 20%;
-
-    background-color: black;
-    color:#ffff;
-    border: 1px solid black;
-    cursor: pointer;
-    transition: background-color ease-in-out 300ms, color ease-in-out 300ms;
-}
-
-.btn:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-
-.tasks {
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-}
-
-.output {
-    display: flex;
-    justify-content: space-between;
-}
-
-.delete {
-    cursor: pointer;;
-}
-
-.notification {
-    background-color: green;
-    color: #fff;
-}
-
-.alert {
-    background-color: red;
-    color: #fff;
-}
-
-/* utilities */
-.container {
-    --max-width: 1110px;
-    --container-padding: 1rem;
-
-    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
-    margin-inline: auto;
-}
+/* General */
