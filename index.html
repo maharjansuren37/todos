@@ -13,9 +13,9 @@
             <h1 class="logo">todos</h1>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li>
-                        <a href="#">Activities</a>
+                        <a href="/activities.html">Activities</a>
                         <ul class="sub-list">
                             <a href="#">Tasks</a>
                             <a href="#">Notes</a>
@@ -23,25 +23,28 @@
                             <a href="#">Outlines</a>
                         </ul>
                     </li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Sign up for free</a></li>
+                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="/login.html">Log In</a></li>
+                    <li><a href="/signup.htmllo">Sign up for free</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="content">
-            <form id="task-form">
-                <div class="form-group">
-                    <div class="form-controls">
-                        <input id="task-input" type="text" placeholder="Your task">
+        <main>
+            <h1>Home</h1>
+            <div class="content">
+                <form id="task-form">
+                    <div class="form-group">
+                        <div class="form-controls">
+                            <input id="task-input" type="text" placeholder="Your task">
+                        </div>
+                        <button class="btn add" type="submit">Add</button>
                     </div>
-                    <button class="btn add" type="submit">Add</button>
-                </div>
-            </form>
-        </div>
-        <section>
-            <ul class="output" id="output"></ul>
-        </section>    
+                </form>
+            </div>
+            <section>
+                <ul class="output" id="output"></ul>
+            </section>    
+        </main>
     </div>
 </body>
 </html>
