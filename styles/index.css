@@ -63,3 +63,7 @@ body {
     margin-inline: auto;
     outline: 1px solid red;
 }
+
+.d-flex {
+    display: flex;
+}
